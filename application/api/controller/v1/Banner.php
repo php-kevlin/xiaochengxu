@@ -29,6 +29,7 @@ class Banner
             $banner = BannerModel::getBannerById($id);
 
 
+
             //1.数组
             /*$data = $banner->toArray();
             unset($data['delete_time']);*/
