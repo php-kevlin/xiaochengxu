@@ -9,7 +9,15 @@
 namespace app\api\controller\v1;
 
 
-class Pay
+class Pay extends BaseController
 {
+    protected $beforeActionList=[
+      'checkExclusiveScope'=>['only'=>'getPreOrder']
+    ];
+
+    public function getPreOrder($id = '')
+    {
+
+    }
 
 }

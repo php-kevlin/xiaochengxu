@@ -9,7 +9,13 @@
 namespace app\lib\exception;
 
 
-class UserException
+class UserException extends BaseException
 {
+    public $code=404;
 
+
+    public $msg='用户名不存在';
+
+
+    public $errorCode = 60000;
 }
